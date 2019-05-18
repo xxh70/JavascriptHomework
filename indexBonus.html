@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UFO Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">select category and enter a value</label>
+						
+						<select id = "myList">
+              <option value = "catagory" selected disabled>selectCatagory</option>
+              <option value = "datetime">Date</option>
+						   <option value = "city">City</option>
+						   <option value = "state">State</option>
+						   <option value = "country">Country</option>
+						   <option value = "shape">Shape</option>
+						   <!--  This made us easy to select all the catagory -->
+						</select>
+						<select id = "myValueList"> </select>
+                      
+                      </li>
+                    </ul>
+                  </div>
+                  
+                </form>
+                <button id="filter-btn" type="submit" class="button">Filter Table</button>
+              </div>
+            </div>
+          </aside>
+
+              <table>
+              <thead>
+                <tr>
+                  <th class="table-head">Date</th>
+                  <th class="table-head">City</th>
+                  <th class="table-head">State</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Shape</th>
+                  <th class="table-head">Duration</th>
+                  <th class="table-head">Comments</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/appBonus.js"></script>
+</body>
+
+</html>
